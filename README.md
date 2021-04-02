@@ -1,2 +1,2 @@
 # fr-static
-portfolio for Franki Roofing
+Portfolio for Franki Roofing.
