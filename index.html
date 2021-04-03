@@ -220,7 +220,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
+									<li><input type="submit" value="Send Message" class="button primary" onclick="cleanUp()"/></li>
 								</ul>
 							</form>
 						</div>
@@ -264,6 +264,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				function cleanUp() {
+					formInput = document.getElementsByClassName("form-control")
+
+					for (i = 0; i < formInput.length; i++) {
+						formInput[i].value = ""
+					}
+				}
+			</script>
 
 	</body>
 </html>
